@@ -16,17 +16,8 @@ body {
     min-width: 20%;
     background: #00835c;
   }
+
   &__contacts {
     background: pink;
-  }
-}
-
-.grid {
-  display: flex;
-  flex-basis: calc(100% / 3);
-  // flex-wrap: wrap;
-
-  &__item {
-      flex-grow: 1;
   }
 }

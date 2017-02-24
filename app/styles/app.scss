@@ -17,20 +17,19 @@
   // flex-wrap: wrap;
 
   &__item {
-      flex-grow: 1;
+    flex-grow: 1;
   }
 }
 
 
 .contact-card {
   display: flex;
-  background: #ff00e6;
   margin: 1rem;
+  background: #ff00e6;
 
   &__item {
     flex-basis: calc(100% / 4);
-    background: $c-greylink;
     margin: 1rem;
-
+    background: $c-greylink;
   }
 };
