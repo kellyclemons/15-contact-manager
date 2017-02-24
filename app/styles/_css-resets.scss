@@ -1,0 +1,24 @@
+// *** CSS RESETS ***
+
+body {
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+
+}
+
+ul {
+  padding-left: 0;
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+}
+
+$c-primary: #0047ff;
+$c-black: #000;
+$c-white: #fff;
+$c-greylink: #888;
+$c-lightgrey: #e7e7e7;
+$c-red: #ff1900;
+$c-green: #00a42e;

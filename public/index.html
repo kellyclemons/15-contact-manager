@@ -1,13 +1,100 @@
 <!DOCTYPE html>
 <html>
+
 <head>
   <meta charset="utf-8">
   <title>15-contact-manager</title>
+  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
   <link rel="stylesheet" href="/app.css">
 </head>
+
 <body>
-<!-- CODE GOES HERE -->
+  <div class="app">
+
+    <!-- Left Nav -->
+
+    <section class="app__sidebar">
+      <div class="form-heading">New Contact</div>
+      <ul class="form-details">
+
+        <li class="form__firstname">First Name
+          <input type="text" class="form-input">
+        </li>
+
+        <li class="form__lastname">Last Name
+          <input type="text" class="form-input">
+        </li>
+
+        <li class="form__street">Street
+          <input type="text" class="form-input">
+        </li>
+
+        <li class="form__city">City
+          <input type="text" class="form-input">
+        </li>
+
+        <li class="new-contact__state">State
+          <input type="text" class="input">
+        </li>
+
+      </ul>
+      <button class="submit-button">Submit</button>
+    </section>
+
+    <!-- Contact Cards -->
+    <section class="app__contacts">
+
+      <div class="grid">
+        <div class="grid__item">
+          <div class="contact-card">
+            <div class="contact-info">
+              <p class="name">Tablada, Ryan</p>
+              <p class="address">123 1st Ave S</p>
+              <p class="city-state"></p>
+              <button class="delete">Delete</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="grid__item">
+          <div class="contact-card">
+            <div class="contact-info">
+              <p class="name">Tablada, Ryan</p>
+              <p class="address">123 1st Ave S</p>
+              <p class="city-state"></p>
+              <button class="contact-delete">Delete</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="grid__item">
+          <div class="contact-card">
+            <div class="contact-info">
+              <p class="name">Tablada, Ryan</p>
+              <p class="address">123 1st Ave S</p>
+              <p class="city-state"></p>
+              <button class="delete">Delete</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="grid__item">
+          <div class="contact-card">
+            <div class="contact-info">
+              <p class="name">Tablada, Ryan</p>
+              <p class="address">123 1st Ave S</p>
+              <p class="city-state"></p>
+              <button class="delete">Delete</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </section>
+
+  </div>
 
   <script src="/app.js" charset="utf-8"></script>
 </body>
+
 </html>

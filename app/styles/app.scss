@@ -4,8 +4,33 @@
 // $fa-font-path: '//netdna.bootstrapcdn.com/font-awesome/4.3.0/fonts';
 // @import 'font-awesome';
 @import 'box-sizing';
-
+@import 'css-resets';
+@import 'double-container';
 // STYLING GOES HERE
-// xyz
-// xyz2
-// xxxxx
+
+// LEFT NAV STYLING
+//
+
+.grid {
+  display: flex;
+  flex-basis: calc(100% / 3);
+  // flex-wrap: wrap;
+
+  &__item {
+      flex-grow: 1;
+  }
+}
+
+
+.contact-card {
+  display: flex;
+  background: #ff00e6;
+  margin: 1rem;
+
+  &__item {
+    flex-basis: calc(100% / 4);
+    background: $c-greylink;
+    margin: 1rem;
+
+  }
+};
