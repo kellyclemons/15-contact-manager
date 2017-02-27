@@ -13,84 +13,87 @@
 
     <!-- Left Nav -->
 
-    <section class="app__sidebar">
+    <div class="app__sidebar">
       <div class="form-heading">New Contact</div>
-      <ul class="form-details">
 
-        <li class="form__firstname">First Name
-          <input type="text" class="form-input">
-        </li>
+      <div class="form">
+        <div class="form__details">
+          <div class="form__firstname">First Name</div>
+          <input type="text" class="form__input">
+        </div>
+        <div class="form__details">
+          <div class="form__firstname">Last Name</div>
+          <input type="text" class="form__input">
+        </div>
+        <div class="form__details">
+          <div class="form__firstname">Street</div>
+          <input type="text" class="form__input">
+        </div>
+        <div class="form__details">
+          <div class="form__firstname">City</div>
+          <input type="text" class="form__input">
+        </div>
 
-        <li class="form__lastname">Last Name
-          <input type="text" class="form-input">
-        </li>
+        <div class="form__details">
+          <div class="form__firstname">State</div>
+          <input type="text" class="form__input">
+        </div>
 
-        <li class="form__street">Street
-          <input type="text" class="form-input">
-        </li>
-
-        <li class="form__city">City
-          <input type="text" class="form-input">
-        </li>
-
-        <li class="new-contact__state">State
-          <input type="text" class="input">
-        </li>
-
-      </ul>
-      <button class="submit-button">Submit</button>
-    </section>
+      </div>
+      <button class="form-submit">Submit</button>
+    </div>
 
     <!-- Contact Cards -->
-    <section class="app__contacts">
+    <div class="app__contacts">
 
       <div class="grid">
+
         <div class="grid__item">
-          <div class="contact-card">
+          <div class="contact">
             <div class="contact-info">
-              <p class="name">Tablada, Ryan</p>
-              <p class="address">123 1st Ave S</p>
-              <p class="city-state"></p>
-              <button class="delete">Delete</button>
+              <div class="contact-info__name">Tablada, Ryan</div>
+              <div class="contact-info__street">123 1st Ave S</div>
+              <div class="contact-info__city-state">Nashville, TN</div>
             </div>
+            <button class="contact-delete">Delete</button>
           </div>
         </div>
 
         <div class="grid__item">
-          <div class="contact-card">
+          <div class="contact">
             <div class="contact-info">
-              <p class="name">Tablada, Ryan</p>
-              <p class="address">123 1st Ave S</p>
-              <p class="city-state"></p>
+              <div class="name">Tablada, Ryan</div>
+              <div class="address">123 1st Ave S</div>
+              <div class="city-state">Nashville, TN</div>
+            </div>
+            <button class="contact-delete">Delete</button>
+          </div>
+        </div>
+
+        <div class="grid__item">
+          <div class="contact">
+            <div class="contact-info">
+              <div class="name">Tablada, Ryan</div>
+              <div class="address">123 1st Ave S</div>
+              <div class="city-state">Nashville, TN</div>
+            </div>
+            <button class="contact-delete">Delete</button>
+          </div>
+        </div>
+
+          <div class="grid__item">
+            <div class="contact">
+              <div class="contact-info">
+                <div class="name">Tablada, Ryan</div>
+                <div class="address">123 1st Ave S</div>
+                <div class="city-state">Nashville, TN</div>
+              </div>
               <button class="contact-delete">Delete</button>
             </div>
           </div>
-        </div>
 
-        <div class="grid__item">
-          <div class="contact-card">
-            <div class="contact-info">
-              <p class="name">Tablada, Ryan</p>
-              <p class="address">123 1st Ave S</p>
-              <p class="city-state"></p>
-              <button class="delete">Delete</button>
-            </div>
-          </div>
         </div>
-
-        <div class="grid__item">
-          <div class="contact-card">
-            <div class="contact-info">
-              <p class="name">Tablada, Ryan</p>
-              <p class="address">123 1st Ave S</p>
-              <p class="city-state"></p>
-              <button class="delete">Delete</button>
-            </div>
-          </div>
-        </div>
-      </div>
-
-    </section>
+</div>
 
   </div>
 
