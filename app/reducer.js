@@ -3,13 +3,15 @@ export default function (state, action) {
 
     case 'CONTACT@FIND_ALL':
       return {
-        contacts: [{ firstName: 'John', lastName: 'Cena' }]
+        contacts: action.data,
       };
 
-
-
-    default:
+    case 'CONTACT@CREATE':
       return {
+        contacts: [...state.contacts, action.data],
+      };
+    default:
+      return state || {
         contacts: [],
       };
   }
