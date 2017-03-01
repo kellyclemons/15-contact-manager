@@ -2,8 +2,6 @@ export default class AppController {
   constructor(el, store) {
     this.el = el;
     this.store = store;
-
-    // Maybe initialize some other classes/objects
   }
 
   // create a 'constructor' function that takes 2 arguments and saves it on the current app instance
