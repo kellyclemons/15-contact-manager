@@ -1,8 +1,10 @@
 import 'whatwg-fetch';
 import store from './store';
-import AppController from './app';
+import AppController from './controller/app';
 
-const appEl = new AppController(document.querySelector('.app'));
-const app = new AppController(appEl, store);
-
-app.created();
+// Select an element that contains the entire app
+const el = document.querySelector('.main');
+// Create an instance of the 'App Controller' class passing in the app element and store
+const controller = new AppController(el, store);
+// run 'created' on app instance
+controller.created();
