@@ -11,16 +11,16 @@ export default class ContactFormView {
     this.el.addEventListener('sumbit', (ev) => {
       // Stop the browser's default behaviour
       ev.preventDefault();
-
-      const data = {
-        firstName: this.el.querySelector('.form__firstname'),
-        lastName: this.el.querySelector('.form__lastname'),
-        address: this.el.querySelector('.form__street'),
-        city: this.el.querySelector('.form__city'),
-        state: this.el.querySelector('.form__State'),
-      };
-
-      this.store.dispatch({ type: 'CONTACT@CREATE', data });
+      this.store.dispatch({
+        type: 'CONTACT@CREATE',
+        data: {
+          firstName: this.el.querySelector('.form__firstname').value,
+          lastName: this.el.querySelector('.form__lastname').value,
+          address: this.el.querySelector('.form__street').value,
+          city: this.el.querySelector('.form__city').value,
+          state: this.el.querySelector('.form__state').value,
+        }
+      });
     });
   }
 }
