@@ -7,7 +7,7 @@ export default class AppController {
     this.el = el;
     this.store = store;
 
-    this.ContactFormView = new ContactFormView(this.el.querySelector('.contact-form'), this.store);
+    this.ContactFormView = new ContactFormView(this.el.querySelector('.form'), this.store);
     this.ContactListView = new ContactListView(this.el.querySelector('.grid'), this.store);
   }
 
