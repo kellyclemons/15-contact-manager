@@ -1,0 +1,50 @@
+// *** CSS RESETS ***
+
+body {
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+
+}
+
+ul {
+  padding-left: 0;
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+}
+
+
+// *** COLOURS ***
+
+// *GRAYSCALES*
+$c-black: #000;
+$c-white: #fff;
+$c-greylink: #888;
+$c-lightgrey: #e7e7e7;
+
+// *RAINBOW COLOURS*
+$c-violet: #9400d3;
+$c-indigo: #4b0082;
+$c-blue: #00f;
+$c-green: #0f0;
+$c-yellow: #ff0 ;
+$c-orange: #ff7f00;
+$c-red: #f00;
+
+// *RANDOM COLOURS*
+$c-green: #00a42e;
+$c-hotpink: #fa00ff;
+$c-darkblue: #000a3e;
+$c-greenblue: #005243;
+$c-magenta: #7d0043;
+$c-purple: #30f;
+
+// *APP COLOURS*
+//
+$c-app-lightblue: #31acfb;
+$c-app-red: #fa0026;
+$c-app-newcontact: #e5f4ff;
+$c-app-green: #4ccc75;
+$c-app-lightgrey: #f0f0f0;

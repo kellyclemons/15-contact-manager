@@ -1,13 +1,103 @@
 <!DOCTYPE html>
 <html>
+
 <head>
   <meta charset="utf-8">
   <title>15-contact-manager</title>
+  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
   <link rel="stylesheet" href="/app.css">
 </head>
-<body>
-<!-- CODE GOES HERE -->
+
+<body class="main">
+  <div class="app">
+
+    <!-- Left Nav -->
+
+    <form class="app__sidebar">
+      <div class="form-heading">New Contact</div>
+
+      <div class="form">
+        <div class="form__details">
+          <div class="form__firstname">First Name</div>
+          <input type="text" class="form__input">
+        </div>
+        <div class="form__details">
+          <div class="form__lastname">Last Name</div>
+          <input type="text" class="form__input">
+        </div>
+        <div class="form__details">
+          <div class="form__street">Street</div>
+          <input type="text" class="form__input">
+        </div>
+        <div class="form__details">
+          <div class="form__city">City</div>
+          <input type="text" class="form__input">
+        </div>
+
+        <div class="form__details">
+          <div class="form__state">State</div>
+          <input type="text" class="form__input">
+        </div>
+
+      </div>
+      <button class="form-submit">Submit</button>
+    </form>
+
+    <!-- Contact Cards -->
+    <div class="app__contacts">
+
+      <div class="grid">
+
+        <div class="grid__item">
+          <div class="contact">
+            <div class="contact-info">
+              <div class="contact-info__name">Tablada, Ryan</div>
+              <div class="contact-info__street">123 1st Ave S</div>
+              <div class="contact-info__city-state">Nashville, TN</div>
+            </div>
+            <button class="contact-delete">Delete</button>
+          </div>
+        </div>
+
+        <div class="grid__item">
+          <div class="contact">
+            <div class="contact-info">
+              <div class="name">Tablada, Ryan</div>
+              <div class="street">123 1st Ave S</div>
+              <div class="city-state">Nashville, TN</div>
+            </div>
+            <button class="contact-delete">Delete</button>
+          </div>
+        </div>
+
+        <div class="grid__item">
+          <div class="contact">
+            <div class="contact-info">
+              <div class="name">Tablada, Ryan</div>
+              <div class="street">123 1st Ave S</div>
+              <div class="city-state">Nashville, TN</div>
+            </div>
+            <button class="contact-delete">Delete</button>
+          </div>
+        </div>
+
+        <div class="grid__item">
+          <div class="contact">
+            <div class="contact-info">
+              <div class="name">Tablada, Ryan</div>
+              <div class="street">123 1st Ave S</div>
+              <div class="city-state">Nashville, TN</div>
+            </div>
+            <button class="contact-delete">Delete</button>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+  </div>
 
   <script src="/app.js" charset="utf-8"></script>
 </body>
+
 </html>
