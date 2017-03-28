@@ -10,17 +10,13 @@ class ItemView {
 
     this.el.innerHTML = `
     <div class="contact">
-      <h2 class="contact__name">
-        <span class="contact__last-name"></span>
-        <span class="contact__first-name"></span>
-      </h2>
-    <p class="contact__address></p>
-    <p class="contact__location">
-      <span class="contact__city"></span>
-      <span class="contact__state"></span>
-    </p>
-    <button class="delete">Delete</button>
-  </div>`;
+      <div class="contact-info">
+        <div class="contact-info__name">Tablada, Ryan</div>
+        <div class="contact-info__street">123 1st Ave S</div>
+        <div class="contact-info__city-state">Nashville, TN</div>
+      </div>
+      <button class="contact-delete">Delete</button>
+    </div>`;
   }
 
   mounted() {
@@ -30,9 +26,9 @@ class ItemView {
   }
 
   render() {
-    this.el.querySelector('.contact-card__name').innerText = `${this.data.lastName}, ${this.data.firstName}`;
-    this.el.querySelector('.contact-card__street').innerText = this.data.street;
-    this.el.querySelector('.contact-card__location').innerText = `${this.data.city}, ${this.data.state}`;
+    this.el.querySelector('.contact-info__name').innerText = `${this.data.lastName}, ${this.data.firstName}`;
+    this.el.querySelector('.contact-info__street').innerText = this.data.street;
+    this.el.querySelector('.contact-info__city-state').innerText = `${this.data.city}, ${this.data.state}`;
   }
 }
 

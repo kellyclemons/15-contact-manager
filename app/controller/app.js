@@ -7,7 +7,7 @@ export default class AppController {
     this.el = el;
     this.store = store;
 
-    this.ContactFormView = new ContactFormView(this.el.querySelector('.form'), this.store);
+    this.ContactFormView = new ContactFormView(this.el.querySelector('.app__sidebar'), this.store);
     this.ContactListView = new ContactListView(this.el.querySelector('.grid'), this.store);
   }
 
@@ -24,9 +24,6 @@ export default class AppController {
     this.ContactListView.mounted();
     // // Get the stringified list of contacts or a default of an empty array
     // Dispatch FIND_ALL to the store with the data loaded from localStorage
-    this.store.dispatch({
-      type: 'CONTACT@FIND_ALL',
-      data: JSON.parse(window.localStorage.contacts || '[]')
-    });
+    this.store.dispatch(findAll());
   }
 }

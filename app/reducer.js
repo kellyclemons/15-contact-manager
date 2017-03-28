@@ -1,4 +1,4 @@
-export default function reducer(state, action) {
+export default function reducer(state = { contacts: [] }, action) {
   switch (action.type) {
 
     case 'CONTACT@FIND_ALL':
@@ -10,6 +10,12 @@ export default function reducer(state, action) {
       return {
         contacts: [...state.contacts, action.data],
       };
+
+    case 'CONTACT@REMOVE':
+      return {
+        contacts: state.contacts.filter(current => current.id !== action.id)
+      };
+
     default:
       return state || {
         contacts: [],

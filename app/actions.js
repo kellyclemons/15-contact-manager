@@ -1,4 +1,6 @@
-export function findAll(contacts) {
+export function findAll() {
+  const contacts = JSON.parse(localStorage.contacts || '[]');
+
   return {
     type: 'CONTACT@FIND_ALL',
     data: contacts
